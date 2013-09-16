@@ -1,6 +1,7 @@
 class Attendee
 	attr_accessor :first_name, :last_name, :phone_number
 	def initialize(data = {})
+		#This says that if you don't give me a value
 		@first_name = data[:first_name]
 		@last_name = data[:last_name]
 		@phone_number = clean_phone_number(data[:phone_number])
